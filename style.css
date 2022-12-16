@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Oxygen:wght@300;400;700&family=Radio+Canada:wght@300;400&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    font-family: 'Radio Canada',sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 80px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.brand{
+    display: flex;
+    align-items:center ;
+    font-weight: bold;
+}
+
+.brand img{
+    width: 45px;
+    padding: 0 5px;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.container{
+    min-height:70vh;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: 'Varela Round';
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    background-image: url(spotify-logo-neon-with-space-text-graphics-green-background_494516-186.webp);
+    background-size:contain;
+}
+
+.bottombar {
+    position:sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+#progressBar{
+    width: 75%;
+    cursor:pointer;
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.songlist{
+    padding: 20px;
+}
+.songItemContainer{
+    margin-top: 70px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.songItem img{
+    width: 100px;
+    margin: 0 4px;
+}
+
+.timeStamp{
+    margin:0 23px ;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 13vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    font-family: 'Varela Round';
+}
